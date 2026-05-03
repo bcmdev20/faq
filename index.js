@@ -83,6 +83,6 @@ faqContainer.forEach((question) => {
     answer.classList.toggle("show");
 
     plus.classList.toggle("hidden");
-    minus.classList.toggle("show");
+    minus.classList.toggle("show-icon");
   });
 });

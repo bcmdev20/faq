@@ -47,6 +47,7 @@ body {
   padding: 20px;
   border-radius: 10px;
 }
+
 .title {
   display: flex;
   align-items: center;
@@ -83,8 +84,11 @@ body {
   font-size: 1rem;
 }
 .answer-container {
-  display: none;
-  transition: 0.3s;
+  /* display: none; */
+  /* opacity: 0; */
+  overflow: hidden;
+  max-height: 0;
+  transition: 0.6s ease-in-out;
 }
 
 .faq:nth-of-type(-n + 3) {
@@ -99,6 +103,7 @@ body {
 
 .minus {
   display: none;
+  /* opacity: 0; */
   cursor: pointer;
 }
 
@@ -109,5 +114,10 @@ body {
 }
 
 .show {
+  max-height: 150px;
+  /* opacity: 1; */
+}
+
+.show-icon {
   display: block;
 }
